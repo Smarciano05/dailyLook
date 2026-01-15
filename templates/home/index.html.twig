@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
+    <!-- Hero Section -->
+    <div class="section hero-section">
+        <div class="section-content">
+            <h1>Votre garde-robe, réinventée</h1>
+            <p>
+                Organisez votre armoire virtuelle, créez des looks uniques et trouvez l'inspiration pour chaque occasion.
+                dailyLook est votre assistant mode personnel.
+            </p>
+            <div class="hero-buttons">
+                <button onclick="window.location.href='/login'" class="btn">Commencer gratuitement</button>
+                <button class="btn btn-secondary">Découvrir</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="section features-section">
+        <div class="section-content">
+            <h2>Tout ce dont vous avez besoin pour gérer votre style</h2>
+            <ul class="features-list">
+                <li>
+                    Armoire Virtuelle
+                    <p>Organisez tous vos vêtements en un seul endroit</p>
+                </li>
+                <li>
+                    Partagez vos looks
+                    <p>Inspirez la communauté avec vos tenues préférées</p>
+                </li>
+                <li>
+                    Suggestions personnalisées
+                    <p>Recevez des recommandations adaptées à votre style</p>
+                </li>
+                <li>
+                    Communauté active
+                    <p>Découvrez les tendances et connectez-vous avec d'autres passionnés</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <!-- CTA Section -->
+    <!-- CTA Section -->
+    <div class="section cta-section">
+        <!-- Bloc central -->
+        <div class="cta-block">
+            <p>Prêt à transformer votre garde-robe ?</p>
+            <p>Rejoignez des milliers d'utilisateurs qui ont déjà révolutionné leur façon de s'habiller</p>
+            <button onclick="window.location.href='/register'" class="btn">
+                Créer mon compte gratuitement
+            </button>
+        </div>
+    </div>
+
+
+{% endblock %}
